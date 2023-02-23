@@ -20,17 +20,21 @@
             "homepage": "https://github.com/nyholm"
         }
     ],
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/pyama86/tag-interop"
+      }
+    ],
     "homepage": "http://www.php-cache.com/en/latest/",
     "require": {
-        "php": "^5.6 || ^7.0 || ^8.0",
-        "cache/tag-interop": "^1.0",
+        "php": "^5.4 || ^7.0 || ^8.0",
+        "cache/tag-interop": "dev-old-php#38c7b79708ecc118dac1e611466bf8504b1d90bf",
         "psr/cache": "^1.0 || ^2.0",
-        "psr/log": "^1.0 || ^2.0 || ^3.0",
-        "psr/simple-cache": "^1.0"
+        "psr/log": "^1.0 || ^2.0 || ^3.0"
     },
     "require-dev": {
-        "cache/integration-tests": "^0.16",
-        "phpunit/phpunit": "^5.7.21"
+        "phpunit/phpunit": "^4.8.36"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

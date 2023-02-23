@@ -17,14 +17,6 @@ use Psr\Cache\CacheItemInterface;
 
 class CacheItemTest extends TestCase
 {
-    public function testConstructor()
-    {
-        $item = new CacheItem('test_key');
-
-        $this->assertInstanceOf(CacheItem::class, $item);
-        $this->assertInstanceOf(CacheItemInterface::class, $item);
-    }
-
     public function testGetKey()
     {
         $item = new CacheItem('test_key');

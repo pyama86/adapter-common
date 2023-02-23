@@ -418,7 +418,7 @@ abstract class AbstractCachePool implements PhpCachePool, LoggerAwareInterface, 
      */
     protected function getTagKey($tag)
     {
-        return 'tag'.self::SEPARATOR_TAG.$tag;
+        return 'tag' . self::SEPARATOR_TAG . $tag;
     }
 
     /**
@@ -482,14 +482,7 @@ abstract class AbstractCachePool implements PhpCachePool, LoggerAwareInterface, 
      */
     private function generateValues($default, $items)
     {
-        foreach ($items as $key => $item) {
-            /** @type $item CacheItemInterface */
-            if (!$item->isHit()) {
-                yield $key => $default;
-            } else {
-                yield $key => $item->get();
-            }
-        }
+        throw new Exception('not impremated for php 5.4');
     }
 
     /**
